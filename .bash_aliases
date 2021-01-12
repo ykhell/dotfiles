@@ -1,4 +1,3 @@
-
 # custom bash aliases for usf
 
 # navigation
