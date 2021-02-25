@@ -1,0 +1,8 @@
+# Bind keys to my liking
+
+xmodmap -e "clear lock" 
+xmodmap -e "keycode 49 = Escape" 
+xmodmap -e "keycode 9 = grave asciitilde" 
+
+#disable caps lock switch 
+#xmodmap -e "keysym Caps_Lock = Escape" #set caps_lock as escape

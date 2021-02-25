@@ -36,7 +36,7 @@ compositing-border = over
 
 ; Define fallback values used by all module formats
 format-foreground = #FF0000
-format-background = #000000
+format-background = #00FF00
 format-underline =
 format-overline =
 format-spacing =
@@ -45,15 +45,9 @@ format-margin =
 format-offset =
 
 [colors]
-; USF theme ============
-background = #112333
-foreground = #bbbbbb
-underline1 = #ff00fb
-underline2 = #b0ffb0
-underline3 = #ffff00
-underline4 = #bbffbb
-underlinedate = #ff0000
-spotify    = #0f0
+; Nord theme ============
+background = #282c34
+foreground = #abb2bf
 alert = #bd2c40
 volume-min = #a3be8c
 volume-med = #ebcb8b
@@ -133,9 +127,7 @@ font-4 = "Font Awesome 5 Brands:pixelsize=8;1"
 
 modules-left = i3 xwindow
 modules-center = 
-
-#themodulesarehere
-modules-right = spotify1 polystock-aapl polystock-tsla polystock-nio polystock-arkk date
+modules-right = arrow9 spotify1 arrow7 polystock-aapl arrow6 polystock-tsla arrow5 polystock-nio arrow4 polystock-arkk arrow8 date
 
 separator = 
 
@@ -1064,10 +1056,9 @@ date-alt = " %a %b %d, %Y"
 time = %l:%M%p
 time-alt = %l:%M%p
 format-prefix = " "
-format-prefix-foreground = ${colors.foreground} 
-format-foreground = ${colors.foreground}
-format-background = ${colors.background}
-format-underline = ${colors.underlinedate}
+format-prefix-foreground = #fefefe
+format-foreground = #fefefe
+format-background = #000000
 label = "%date% %time% "
 
 #################################################################
@@ -1388,8 +1379,8 @@ type = custom/script
 exec = ~/.config/polybar/scripts/pub-ip.sh
 interval = 100
 format-foreground = ${colors.foreground}
-format-underline = #FFBB00
 format-background = ${colors.background}
+format-underline = #FFBB00
 label = %output%
 format-prefix = "  "
 format-prefix-foreground = #FFBB00
@@ -1409,9 +1400,8 @@ exec = ~/.config/polybar/scripts/polystock.py --customticker AAPL
 tail = true
 label = %output%
 
-format-underline =  ${colors.underline1}
-format-foreground = ${colors.foreground}
-format-background = ${colors.background}
+format-foreground = #111111
+format-background = #ffff00
 ################################################################################
 
 [module/polystock-tsla]
@@ -1427,9 +1417,8 @@ exec = ~/.config/polybar/scripts/polystock.py --customticker TSLA
 tail = true
 label = %output%
 
-format-underline =  ${colors.underline2}
-format-foreground = ${colors.foreground}
-format-background = ${colors.background}
+format-foreground = #111111
+format-background = #ffbb00
 ################################################################################
 
 [module/polystock-nio]
@@ -1445,9 +1434,8 @@ exec = ~/.config/polybar/scripts/polystock.py --customticker NIO
 tail = true
 label = %output%
 
-format-underline =  ${colors.underline3}
-format-foreground = ${colors.foreground}
-format-background = ${colors.background}
+format-foreground = #fefefe
+format-background = #ff5900
 ################################################################################
 
 [module/polystock-arkk]
@@ -1463,9 +1451,8 @@ exec = ~/.config/polybar/scripts/polystock.py --customticker ARKK
 tail = true
 label = %output%
 
-format-underline =  ${colors.underline4}
-format-foreground = ${colors.foreground}
-format-background = ${colors.background}
+format-foreground = #fefefe
+format-background = #aa0000
 ################################################################################
 
 [module/release]
@@ -1499,12 +1486,12 @@ exec = ~/.config/polybar/scripts/spotify1.sh
 interval = 1
 
 ;format = <label>
-format-foreground = ${colors.foreground} 
-format-background = ${colors.background}
+format-foreground = #000000 
+format-background = #0f0
 format-padding = 2
-format-underline = ${colors.spotify} 
+format-underline = #0f0
 format-prefix = "  "
-format-prefix-foreground = ${colors.spotify} 
+format-prefix-foreground = #000000
 label = %output:0:150%
 
 ################################################################################
