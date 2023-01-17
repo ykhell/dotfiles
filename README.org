@@ -1,0 +1,8 @@
+#+title: Dotfiles
+
+* WM
+** XMonad
+** i3wm
+* Shell Scripts
+** Key bindings
+** Update Dotfiles
