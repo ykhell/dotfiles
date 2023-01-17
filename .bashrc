@@ -97,6 +97,7 @@ alias la='ls -A'
 alias l='ls -CF'
 
 # git aliases
+alias clone='git clone'
 alias status='git status'
 alias commit='git commit -a -m'
 alias addall='git add .'
