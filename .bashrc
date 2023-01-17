@@ -132,7 +132,8 @@ alias nem='emacs -nw'
 
 # scripts
 alias keysh='$HOME/.config/scripts/keymaps'
-alias updotfiles='$HOME/.config/scripts/update_dotfiles.sh'
+alias updots='$HOME/.config/scripts/update_dotfiles.sh'
+alias pushdots='$HOME/.config/scripts/push_dotfiles.sh'
 alias apdate='sudo apt update && sudo apt upgrade && sudo apt autoremove'
 
 # Add an "alert" alias for long running commands.  Use like so:
