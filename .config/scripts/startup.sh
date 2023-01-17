@@ -1,0 +1,2 @@
+./keymap.sh
+./wallpaper.sh
