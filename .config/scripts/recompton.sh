@@ -1,2 +1,0 @@
-killall compton
-compton
