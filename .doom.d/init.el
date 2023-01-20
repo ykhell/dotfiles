@@ -11,10 +11,9 @@
 (eval-and-compile
   (setq use-package-always-ensure t
         use-package-expand-minimally t))
-
+(setq warning-minimum-level :emergency)
 (setq byte-compile-warnings '(cl-functions))
 (setq byte-compile-warnings '(php-extras))
-
 ;; This file controls what Doom modules are enabled and what order they load
 ;; in. Remember to run 'doom sync' after modifying it!
 
@@ -169,7 +168,7 @@
        ;;nix               ; I hereby declare "nix geht mehr!"
        ;;ocaml             ; an objective camel
        org               ; organize your plain life in plain text
-       ;;php               ; perl's insecure younger brother
+       php               ; perl's insecure younger brother
        ;;plantuml          ; diagrams for confusing people more
        ;;purescript        ; javascript, but functional
        python            ; beautiful is better than ugly

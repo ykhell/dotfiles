@@ -5,6 +5,8 @@
 # PATH
 export PATH="$HOME/.emacs.d/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
+# C++ Compiler
+# export CPLUS_INCLUDE_PATH=/usr/include/$CPLUS_INCLUDE_PATH
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -136,6 +138,7 @@ alias keysh='$HOME/.config/scripts/keymaps'
 alias updots='$HOME/.config/scripts/update_dotfiles.sh'
 alias pushdots='$HOME/.config/scripts/push_dotfiles.sh'
 alias apdate='sudo apt update && sudo apt upgrade && sudo apt autoremove'
+
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
