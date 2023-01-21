@@ -7,6 +7,7 @@ export PATH="$HOME/.emacs.d/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 # C++ Compiler
 # export CPLUS_INCLUDE_PATH=/usr/include/$CPLUS_INCLUDE_PATH
+export CPLUS_INCLUDE_PATH=/usr/include/c++/11:$CPLUS_INCLUDE_PATH
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
