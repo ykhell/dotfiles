@@ -64,6 +64,8 @@
 
 (latex-preview-pane-enable)
 
+(setq helm-display-function #'helm-display-buffer-in-own-rrame
+        helm-show-completion-display-function #'helm-display-buffer-in-own-frame)
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
 ;;
@@ -95,3 +97,14 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+(require 'ivy-posframe)
+;; display at `ivy-posframe-style'
+(setq ivy-posframe-display-functions-alist '((t . ivy-posframe-display)))
+;; (setq ivy-posframe-display-functions-alist '((t . ivy-posframe-display-at-frame-center)))
+(setq ivy-posframe-display-functions-alist '((t . ivy-posframe-display-at-window-center)))
+;; (setq ivy-posframe-display-functions-alist '((t . ivy-posframe-display-at-frame-bottom-left)))
+;; (setq ivy-posframe-display-functions-alist '((t . ivy-posframe-display-at-window-bottom-left)))
+;; (setq ivy-posframe-display-functions-alist '((t . ivy-posframe-display-at-frame-top-center)))
+;; (ivy-posframe-mode 1)
+(ivy-posframe-mode)
+(ivy-mode)

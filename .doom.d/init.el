@@ -14,6 +14,7 @@
 (setq warning-minimum-level :emergency)
 (setq byte-compile-warnings '(cl-functions))
 (setq byte-compile-warnings '(php-extras))
+
 ;; This file controls what Doom modules are enabled and what order they load
 ;; in. Remember to run 'doom sync' after modifying it!
 
@@ -220,3 +221,5 @@
                  ("\\paragraph{%s}" . "\\paragraph*{%s}")
                  ("\\subparagraph{%s}" . "\\subparagraph*{%s}"))))
 (setq org-latex-with-hyperref nil)
+
+(setq fancy-splash-image "~/.doom.d/black-hole.png")

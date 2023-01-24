@@ -127,7 +127,6 @@ alias cdan='cd $HOME/aufgaben/analysis-1/'
 alias cdpi='cd $HOME/aufgaben/praktische-informatik/'
 
 # vim
-alias vim='nvim'
 alias :q='exit'
 alias :wq='exit'
 
@@ -140,6 +139,7 @@ alias updots='$HOME/.config/scripts/update_dotfiles.sh'
 alias pushdots='$HOME/.config/scripts/push_dotfiles.sh'
 alias apdate='sudo apt update && sudo apt upgrade && sudo apt autoremove'
 
+alias pyinstaller='python3 -m PyInstaller'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert

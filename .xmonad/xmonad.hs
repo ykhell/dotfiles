@@ -242,7 +242,7 @@ myStartupHook = do
   spawnOnce "compton --config ~/.config/compton/compton.conf" -- Compositor
   spawnOnce "xsetroot -cursor_name left_ptr " -- Cursor
   -- Daemons and Services
-  spawnOnce "/usr/bin/emacs --daemon " -- Emacs Daemon
+  spawnOnce "XMODIFIERS=@im=none /usr/bin/emacs --daemon " -- Emacs Daemon
 ------------------------------------------------------------------------
 -- Now run xmonad with all the defaults we set up.
 
